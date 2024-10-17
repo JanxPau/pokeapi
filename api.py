@@ -10,7 +10,23 @@ def get_pokemon_info(name):
     return data
 
 
-pokemon = input("Name a pokemon: ")
+def get_pokemon_abilities():
+    for ability in pokemon_info['abilities']:
+        pokemon_abilities = ability['ability']['name']
+        print(pokemon_abilities)
+
+
+def get_pokemon_image():
+    pokemon_image = pokemon_info['sprites']['other']['official-artwork']['front_default']
+    print(pokemon_image)
+
+
+# pokemon = input("Name a pokemon: ")
+pokemon = 'charizard'
 pokemon_info = get_pokemon_info(pokemon)
 print(pokemon_info['id'])
 print(pokemon_info['name'])
+get_pokemon_abilities()
+pokemon_images = pokemon_info['sprites']['other']['official-artwork']['front_default']
+print(pokemon_images)
+get_pokemon_image()
