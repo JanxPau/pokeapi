@@ -27,6 +27,4 @@ pokemon_info = get_pokemon_info(pokemon)
 print(pokemon_info['id'])
 print(pokemon_info['name'])
 get_pokemon_abilities()
-pokemon_images = pokemon_info['sprites']['other']['official-artwork']['front_default']
-print(pokemon_images)
 get_pokemon_image()
